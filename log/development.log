@@ -723,3 +723,81 @@ Processing by MainController#index as HTML
 Completed 200 OK in 143ms (Views: 139.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:12:33 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 133ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:27:06 -0400
+Processing by MainController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `new' for Meetup:Module):
+  
+app/controllers/main_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:29:13 -0400
+Processing by MainController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `new' for Meetup:Module):
+  
+app/controllers/main_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:29:45 -0400
+Processing by MainController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `new' for Meetup:Module):
+  
+app/controllers/main_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:31:28 -0400
+  
+ActionController::RoutingError (undefined local variable or method `meetup' for MainController:Class):
+  
+app/controllers/main_controller.rb:2:in `<class:MainController>'
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:33:39 -0400
+Processing by MainController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `new' for Meetup:Module):
+  
+app/controllers/main_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:35:42 -0400
+Processing by MainController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `new' for Meetup:Module):
+  
+app/controllers/main_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:39:44 -0400
+Processing by MeetupController#index as HTML
+Completed 422 Unprocessable Entity in 8ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:41:56 -0400
+Processing by MeetupController#index as HTML
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:42:16 -0400
+Processing by MeetupController#index as HTML
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-08 16:54:30 -0400
+Processing by MeetupController#index as HTML
+Completed 200 OK in 367ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+

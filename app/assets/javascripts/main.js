@@ -29,7 +29,7 @@ function geoFindMe() {
             console.log(latitude);
             console.log(longitude);
 
-            // meetups_api_call()
+            meetups_api_call()
             
         });
     }
@@ -44,10 +44,10 @@ function geoFindMe() {
     }
 
     function  meetups_api_call() {
-        console.log(zipcode);
+console.log('start api call');
 
         var response = $.ajax({
-            url: 'https://api.meetup.com/find/upcoming_events?&sign=true&photo-host=public&lon=' + longitude + '&page=20&radius=smart&lat=' + latitude,
+            url: 'https://api.meetup.com/find/upcoming_events?key=5e4d3812121c65223f56467776e5912&sign=true&photo-host=public&lon=' + longitude + '&page=20&radius=smart&lat=' + latitude,
             method: 'GET',
             dataType: 'json'
         }).done(function(data) {
