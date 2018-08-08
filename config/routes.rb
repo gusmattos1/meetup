@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'meetup#index'
-
+  root 'main#index'
+  get '/meetup', to: 'meetup#index'
+  get '/show', to: 'meetup#show'
 end

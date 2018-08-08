@@ -16,20 +16,15 @@ function geoFindMe() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
         };
-        // ajax call to google maps to find readible address from location data
+        // ajax call to google maps to   readible address from location data
         var response = $.ajax({
-            url: 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+pos.lat+', '+pos.lng+'&key=AIzaSyDxHtxeT7TcaPqz8y2tPRWbqIwB9ROdZfk',
+            url: '/meetup?lat='+pos.lat+'&lng='+pos.lng,
             method: 'GET',
             dataType: 'json'
         }).done(function(data) {
-            // console.log(response.responseJSON.results[0].address_components[8].long_name);
-            latitude = response.responseJSON.results[0].geometry.location.lat
-            longitude = response.responseJSON.results[0].geometry.location.lng
+            console.log(data);
             
-            console.log(latitude);
-            console.log(longitude);
-
-            meetups_api_call()
+            display_data(data)
             
         });
     }
@@ -43,19 +38,27 @@ function geoFindMe() {
       navigator.geolocation.getCurrentPosition(success, error);
     }
 
-    function  meetups_api_call() {
-console.log('start api call');
+function display_data(data) {
 
-        var response = $.ajax({
-            url: 'https://api.meetup.com/find/upcoming_events?key=5e4d3812121c65223f56467776e5912&sign=true&photo-host=public&lon=' + longitude + '&page=20&radius=smart&lat=' + latitude,
-            method: 'GET',
-            dataType: 'json'
-        }).done(function(data) {
-          
-            console.log(data);
-            
-            
-        });
+    var result = document.getElementById('result')
+for (var i = 0; i < data.events.length; i++) {
+  var div             = document.createElement("div")
+  var name            = document.createElement("h3")
+  var time             = document.createElement("p")
+  var request_link    = document.createElement("a")
+  var request_button  = document.createElement("button")
 
-    }
-    
+  name.innerText        = data.events[i].name
+  time.innerText       =  data.events[i].time
+  div.classList.add("single_result")
+  request_link.setAttribute('target', '_blank')
+  request_link.setAttribute('href', '/show?urlname=' + data.events[i].group.urlname + '&event_id=' + data.events[i].id)
+  request_button.innerText = 'Select Event'
+  request_link.appendChild(request_button)
+  div.appendChild(name)
+  div.appendChild(time)
+  div.appendChild(request_link)
+  result.appendChild(div)
+}
+}
+
