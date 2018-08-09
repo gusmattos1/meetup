@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :photo
       t.string :urlname
-      t.string :event_id , unique: true
+      t.string :event_id, unique: true
 
       t.timestamps
     end
