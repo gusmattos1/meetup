@@ -1,0 +1,24 @@
+<div class="event">
+<h2> <%= @selected_event['name'] %> </h2>
+<%= @selected_event['description'].html_safe %>
+
+<h2>Members:</h2>
+
+<% @event_members.each do |p| %>
+
+<div style="width: 120px; border: solid 1px black" class = 'member'></div>
+
+    <h2><%= p['member']['name']%></h2>
+
+    <% if  p['member']['photo'] %>
+    <img style="max-width: 100px; max-width: 100px" class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt="">
+    <% else %>
+    <p style="color: red; font-size: 12px">user have no pictures</p>
+    <%end%>
+
+</div>
+
+<% end %>
+
+
+</div>

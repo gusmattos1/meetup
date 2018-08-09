@@ -15,9 +15,8 @@ class MeetupController < ApplicationController
 
     urlname    = params[:urlname]
     event_id   = params[:event_id]
+    @selected_event = Meetup.new.selected_event(urlname, event_id)
+    @event_members = Meetup.new.selected_event_rsvps(urlname, event_id)
 
-    @selectec_event = Meetup.new.selected_event(urlname, event_id)
-
-    render json: @selectec_event, status: :ok
   end
 end

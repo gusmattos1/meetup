@@ -29,8 +29,20 @@ class Meetup
     end
 
     def get_selected_event(urlname, event_id)
+      self.class.get('/' + urlname + '/events/' + event_id + '?&sign=true')
+    end
+    
+    def get_event_rsvps(urlname, event_id)
       self.class.get('/' + urlname + '/events/' + event_id + '/rsvps?&sign=true&photo-host=public')
-    end 
+    end
+
+    def selected_event_rsvps (urlname, event_id)
+      if get_event_rsvps(urlname, event_id).code.to_i == 200
+        get_event_rsvps(urlname, event_id).parsed_response
+      else
+        raise "Error fetching data from Meetup API"
+      end
+    end
 
     def selected_event (urlname, event_id)
       if get_selected_event(urlname, event_id).code.to_i == 200

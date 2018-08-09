@@ -1119,3 +1119,1319 @@ Processing by MeetupController#show as HTML
 Completed 200 OK in 892ms (Views: 35.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:40:34 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 200 OK in 839ms (Views: 140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-08 18:40:55 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 69ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/meetup?lat=43.644746&lng=-79.3916261" for 127.0.0.1 at 2018-08-08 18:44:49 -0400
+Processing by MeetupController#index as JSON
+  Parameters: {"lat"=>"43.644746", "lng"=>"-79.3916261"}
+Completed 200 OK in 1155ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:44:52 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 200 OK in 923ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:45:16 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 687ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <div class="event">
+    2: 
+    3: <h2><%=@selected_event[0].event.name%></h2>
+    4: 
+    5: </div>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129871407660'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:47:29 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 901ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<Hash:0x00007f90c9be3988>):
+    1: <div class="event">
+    2: 
+    3: <h2><%=@selected_event[0].event.name%></h2>
+    4: 
+    5: </div>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129918003060'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:48:08 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 637ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:48:42 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 770ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Hash:0x00007f90c51e8888>):
+    1: <div class="event">
+    2: <h1>test</h1>
+    3: <h2><%=@selected_event[0].name%></h2>
+    4: 
+    5: </div>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129913703580'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:48:54 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 846ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:49:15 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 770ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<Hash:0x00007f90c9e011e8>):
+    1: <div class="event">
+    2: <h1>test</h1>
+    3: <h2><%=@selected_event[0].event%></h2>
+    4: 
+    5: </div>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129871777240'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:49:23 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 680ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:49:44 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 803ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `created' for #<Hash:0x00007f90c9210028>):
+    1: <div class="event">
+    2: <h1>test</h1>
+    3: <h2><%=@selected_event[0].created%></h2>
+    4: 
+    5: </div>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129917919860'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:50:19 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 913ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:54:04 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 961ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `event' for #<Hash:0x00007f90c9069760>):
+    1: <div class="event">
+    2: <h1>test</h1>
+    3: <h2><%= @selected_event[0].event %></h2>
+    4: 
+    5: </div>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129871409920'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:55:27 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 895ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:55:58 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 842ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 18:56:14 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 910ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:06:14 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 659ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:6: syntax error, unexpected keyword_do, expecting keyword_end
+'.freeze; @selected_event do |item| 
+                          ^~):
+  
+app/views/meetup/show.html.erb:6: syntax error, unexpected keyword_do, expecting keyword_end
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:06:37 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 593ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:6: syntax error, unexpected keyword_do, expecting keyword_end
+'.freeze; @selected_event do |item| 
+                          ^~
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/meetup/show.html.erb:6: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/meetup/show.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:08:46 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 863ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:5: syntax error, unexpected keyword_do, expecting keyword_end
+'.freeze; @selected_event do |item| 
+                          ^~
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/meetup/show.html.erb:5: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/meetup/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:17:02 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 758ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:5: syntax error, unexpected keyword_do, expecting keyword_end
+'.freeze; @event_members do |item| 
+                         ^~
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/meetup/show.html.erb:5: syntax error, unexpected keyword_do, expecting keyword_end
+app/views/meetup/show.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:17:27 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 705ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <div class="event">
+    2: <h2> <%= @selected_event['name'] %> </h2>
+    3: 
+    4: 
+    5: 
+  
+app/views/meetup/show.html.erb:2:in `[]'
+app/views/meetup/show.html.erb:2:in `_app_views_meetup_show_html_erb__1856094059839670272_70129914000980'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:18:36 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 500 Internal Server Error in 851ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `get_event_rsvps' for #<Meetup:0x00007f90c9772b10>):
+  
+app/controllers/meetup_controller.rb:19:in `show'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:20:10 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 711ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:21:26 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1301ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:21:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1102ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:23:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 1112ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:24:58 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1219ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:25:09 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 1182ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Array:0x00007f90ca8ebc98>):
+    1: <div class="event">
+    2: <h2> <%= @event_members.name%> </h2>
+    3: 
+    4: 
+    5: 
+  
+app/views/meetup/show.html.erb:2:in `_app_views_meetup_show_html_erb__1856094059839670272_70129880958600'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:25:34 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 1556ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <div class="event">
+    2: <h2> <%= @event_members['name']%> </h2>
+    3: 
+    4: 
+    5: 
+  
+app/views/meetup/show.html.erb:2:in `[]'
+app/views/meetup/show.html.erb:2:in `_app_views_meetup_show_html_erb__1856094059839670272_70129898683720'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:26:44 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 500 Internal Server Error in 1095ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/controllers/meetup_controller.rb:19:in `show'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:27:16 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Net::HTTPOK into String):
+  
+app/models/meetup.rb:49:in `selected_event'
+app/controllers/meetup_controller.rb:18:in `show'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:28:11 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 500 Internal Server Error in 455ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Net::HTTPOK into String):
+  
+app/models/meetup.rb:49:in `selected_event'
+app/controllers/meetup_controller.rb:18:in `show'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:28:13 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Net::HTTPOK into String):
+  
+app/models/meetup.rb:49:in `selected_event'
+app/controllers/meetup_controller.rb:18:in `show'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:28:19 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 1047ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    1: <div class="event">
+    2: <h2> <%= @event_members['data']%> </h2>
+    3: 
+    4: 
+    5: 
+  
+app/views/meetup/show.html.erb:2:in `[]'
+app/views/meetup/show.html.erb:2:in `_app_views_meetup_show_html_erb__1856094059839670272_70129925857240'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:29:02 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 1003ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:29:32 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 1024ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:32:39 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1070ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:32:49 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 864ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Hash:0x00007f90c9f88db8>):
+    1: <div class="event">
+    2: <h2> <%= @selected_event.name%> </h2>
+    3: 
+    4: 
+    5: 
+  
+app/views/meetup/show.html.erb:2:in `_app_views_meetup_show_html_erb__1856094059839670272_70129914012380'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:33:09 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 829ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:35:12 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 3277ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    2: <h2> <%= @selected_event['name'] %> </h2>
+    3: 
+    4: <% @event_members.each do |p| %>
+    5:   <td><%= p['members']['name'] %></td>
+    6: <% end %>
+    7: 
+    8: 
+  
+app/views/meetup/show.html.erb:5:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129920314580'
+app/views/meetup/show.html.erb:4:in `each'
+app/views/meetup/show.html.erb:4:in `_app_views_meetup_show_html_erb__1856094059839670272_70129920314580'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:35:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 1199ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:35:59 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 1036ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:36:01 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 1079ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:36:23 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1198ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:36:35 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 1441ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `members' for #<Hash:0x00007f90c7429e38>
+Did you mean?  member?):
+    2: <h2> <%= @selected_event['name'] %> </h2>
+    3: 
+    4: <% @event_members.each do |p| %>
+    5:   <%= p.members%>
+    6: <% end %>
+    7: 
+    8: 
+  
+app/views/meetup/show.html.erb:5:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129912875600'
+app/views/meetup/show.html.erb:4:in `each'
+app/views/meetup/show.html.erb:4:in `_app_views_meetup_show_html_erb__1856094059839670272_70129912875600'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:36:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 1105ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `member' for #<Hash:0x00007f90c441d898>
+Did you mean?  member?):
+    2: <h2> <%= @selected_event['name'] %> </h2>
+    3: 
+    4: <% @event_members.each do |p| %>
+    5:   <%= p.member%>
+    6: <% end %>
+    7: 
+    8: 
+  
+app/views/meetup/show.html.erb:5:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129880896180'
+app/views/meetup/show.html.erb:4:in `each'
+app/views/meetup/show.html.erb:4:in `_app_views_meetup_show_html_erb__1856094059839670272_70129880896180'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:36:55 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1133ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:37:05 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 930ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:38:54 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1199ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:39:17 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1147ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:39:57 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1161ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:40:45 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (177.0ms)
+Completed 500 Internal Server Error in 2021ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `gsub' for #<#<Class:0x00007f90c955af80>:0x00007f90c3ac8338>):
+    1: <div class="event">
+    2: <h2> <%= @selected_event['name'] %> </h2>
+    3: <h4> <%= @selected_event['description']..gsub(/"/) %> </h4>
+    4: 
+    5: 
+    6: <% @event_members.each do |p| %>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129867457620'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:41:45 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1049ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:42:04 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1143ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:42:21 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1201ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:42:29 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1096ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:42:38 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1110ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:42:59 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 1200ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `rchomp' for #<String:0x00007f90c3f4ec40>
+Did you mean?  chomp
+               chomp!
+               chop):
+    1: <div class="event">
+    2: <h2> <%= @selected_event['name'] %> </h2>
+    3: <%= @selected_event['description'].rchomp('"') %>
+    4: 
+    5: 
+    6: <% @event_members.each do |p| %>
+  
+app/views/meetup/show.html.erb:3:in `_app_views_meetup_show_html_erb__1856094059839670272_70129868972580'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:43:12 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1058ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:44:36 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 881ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:45:31 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1139ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-08 19:46:27 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:46:31 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 1227ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:12: syntax error, unexpected '<', expecting ')'
+    <img src="" alt="">
+    ^
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <img src="" alt="">
+                ^~~
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:13: syntax error, unexpected '<'
+</div>
+^
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:18: unknown regexp options - dv
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:18: unmatched close parenthesis: /div>
+
+<% end );@output_buffer.safe_append='
+
+
+</i
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:22: unterminated string meets end of file
+          end
+             ^
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/meetup/show.html.erb:12: syntax error, unexpected '<', expecting ')'
+app/views/meetup/show.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/meetup/show.html.erb:13: syntax error, unexpected '<'
+app/views/meetup/show.html.erb:18: unknown regexp options - dv
+app/views/meetup/show.html.erb:18: unmatched close parenthesis: /div>
+app/views/meetup/show.html.erb:22: unterminated string meets end of file
+app/views/meetup/show.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:46:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1188ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:48:27 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 1065ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['member']['photo_link']%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129919936720'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129919936720'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:48:45 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 857ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['photo_link']%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129925215820'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129925215820'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:49:00 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 960ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:49:36 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 1215ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']["photo_link"]%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129934229080'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129934229080'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:49:48 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 1024ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['photo_link']%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129914911600'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129914911600'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:50:06 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 804ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo_link' for #<Hash:0x00007f90caf8ebe0>):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo'].photo_link%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129942254880'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129942254880'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:50:17 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1047ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:50:39 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 979ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['id']%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129936708680'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129936708680'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:50:47 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 1350ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo'][:id]%>
+    12:     <img src="" alt="">
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129927600580'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129927600580'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:50:58 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 939ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:51:15 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1014ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:51:42 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 800ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:12: syntax error, unexpected '<', expecting ']'
+    <img src="" alt="">
+    ^
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <img src="" alt="">
+                ^~~
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:13: syntax error, unexpected '<'
+</div>
+^
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:18: unknown regexp options - dv
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:22: unterminated string meets end of file
+          end
+             ^
+/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/meetup/show.html.erb:12: syntax error, unexpected '<', expecting ']'
+app/views/meetup/show.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/meetup/show.html.erb:13: syntax error, unexpected '<'
+app/views/meetup/show.html.erb:18: unknown regexp options - dv
+app/views/meetup/show.html.erb:22: unterminated string meets end of file
+app/views/meetup/show.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:51:57 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 736ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:52:07 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 816ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:52:26 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 1019ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['photo_link']%>
+    12: </div>
+    13: 
+    14: <% end %>
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129933780380'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129933780380'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:52:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 1082ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['photo_link']%>
+    12: </div>
+    13: 
+    14: <% end %>
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129882427640'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129882427640'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:52:55 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1086ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:53:09 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 831ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Hash:0x00007f90cad93278>):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo'].id%>
+    12: </div>
+    13: 
+    14: <% end %>
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129872561560'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129872561560'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:53:27 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1155ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:54:36 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1352ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:54:44 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 1014ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Hash:0x00007f90c47d9860>):
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <% photo = p['member']['photo'] %>
+    12:     <%= photo.id %>
+    13: </div>
+    14: 
+    15: <% end %>
+  
+app/views/meetup/show.html.erb:12:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129941649240'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129941649240'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:54:57 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 999ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:55:24 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 992ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <%= p['member']['photo']['photo_link'] %>
+    12:   
+    13: </div>
+    14: 
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129881813600'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129881813600'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:55:38 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 901ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:57:13 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 983ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/gustavodemattos/Documents/meetup/app/views/meetup/show.html.erb:23: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/meetup/show.html.erb:23: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:57:27 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (286.6ms)
+Completed 500 Internal Server Error in 1373ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `null' for #<#<Class:0x00007f90c955af80>:0x00007f90cb9a11a0>):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <% if  p['member']['photo']['photo_link'] != null %>
+    12:     <%= p['member']['photo']['photo_link'] %>
+    13:     <%end%>
+    14: </div>
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129933946240'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129933946240'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:57:43 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 805ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <% if  p['member']['photo']['photo_link'] %>
+    12:     <%= p['member']['photo']['photo_link'] %>
+    13:     <%end%>
+    14: </div>
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129913782600'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129913782600'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 19:57:59 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 945ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     8: 
+     9: <div class = 'member'></div>
+    10:     <p><%= p['member']['name']%></p>
+    11:     <% if  p['member']['photo']['photo_link'] != nil %>
+    12:     <%= p['member']['photo']['photo_link'] %>
+    13:     <%end%>
+    14: </div>
+  
+app/views/meetup/show.html.erb:11:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129926857520'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129926857520'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:00:00 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 852ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    10: 
+    11:     <p><%= p['member']['name']%></p>
+    12: 
+    13:     <% if  p['member']['photo']['photo_link'] %>
+    14:     <%= p['member']['photo']['photo_link'] %>
+    15:     <%end%>
+    16:     
+  
+app/views/meetup/show.html.erb:13:in `block in _app_views_meetup_show_html_erb__1856094059839670272_70129928146040'
+app/views/meetup/show.html.erb:7:in `each'
+app/views/meetup/show.html.erb:7:in `_app_views_meetup_show_html_erb__1856094059839670272_70129928146040'
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:00:19 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1099ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:01:04 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1262ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:01:25 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1211ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:02:02 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 966ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:02:40 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 822ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:02:47 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1209ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:03:30 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 797ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:04:01 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1058ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:04:18 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1085ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:04:45 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 827ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-08 20:05:14 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1036ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
