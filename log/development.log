@@ -3983,3 +3983,131 @@ Processing by MainController#index as HTML
 Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 0.2ms)
 
 
+  [1m[35m (434.1ms)[0m  [1m[35mCREATE DATABASE "meetup_development" ENCODING = 'unicode'[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (328.3ms)[0m  [1m[35mCREATE DATABASE "meetup_test" ENCODING = 'unicode'[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (1.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "events" CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (32.3ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying, "photo" character varying, "urlname" character varying, "event_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180809040351)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-09 05:25:05.785476"], ["updated_at", "2018-08-09 05:25:05.785476"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "events" CASCADE[0m
+  ↳ db/schema.rb:15
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "events" ("id" bigserial primary key, "name" character varying, "photo" character varying, "urlname" character varying, "event_id" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:15
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180809040351)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-09 05:25:05.848325"], ["updated_at", "2018-08-09 05:25:05.848325"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (1.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-08-09 05:25:05.855289"], ["key", "environment"]]
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(363678448864822665)[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(363678448864822665)[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-08-09 01:25:41 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/gustavodemattos/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."updated_at" DESC[0m
+  ↳ app/views/main/index.html.erb:17
+  Rendered main/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 332ms (Views: 315.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/meetup?lat=43.6661935&lng=-79.38440829999999" for 127.0.0.1 at 2018-08-09 01:25:48 -0400
+Processing by MeetupController#index as JSON
+  Parameters: {"lat"=>"43.6661935", "lng"=>"-79.38440829999999"}
+Completed 200 OK in 1089ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/show?urlname=Data-Science-Dojo-Toronto&event_id=251314898" for 127.0.0.1 at 2018-08-09 01:25:50 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Data-Science-Dojo-Toronto", "event_id"=>"251314898"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetup_controller.rb:24
+  [1m[36mEvent Create (1.2ms)[0m  [1m[32mINSERT INTO "events" ("name", "photo", "urlname", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Introduction to Online Experimentation and A/B Testing"], ["photo", "https://secure.meetupstatic.com/photos/event/5/f/3/7/600_471804375.jpeg"], ["urlname", "Data-Science-Dojo-Toronto"], ["event_id", "251314898"], ["created_at", "2018-08-09 05:25:51.700565"], ["updated_at", "2018-08-09 05:25:51.700565"]]
+  ↳ app/controllers/meetup_controller.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetup_controller.rb:24
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 993ms (Views: 21.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/show?urlname=Life-Begins-At-40&event_id=252820305" for 127.0.0.1 at 2018-08-09 01:25:54 -0400
+Processing by MeetupController#show as HTML
+  Parameters: {"urlname"=>"Life-Begins-At-40", "event_id"=>"252820305"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/meetup_controller.rb:24
+  [1m[36mEvent Create (0.8ms)[0m  [1m[32mINSERT INTO "events" ("name", "photo", "urlname", "event_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "MEMBER APPRECIATION WEEKEND (PART ONE) WITH TRAINWRECK (NO COVER OR MEETUP FEE))"], ["photo", "https://secure.meetupstatic.com/photos/event/4/b/5/a/600_472939290.jpeg"], ["urlname", "Life-Begins-At-40"], ["event_id", "252820305"], ["created_at", "2018-08-09 05:25:55.205865"], ["updated_at", "2018-08-09 05:25:55.205865"]]
+  ↳ app/controllers/meetup_controller.rb:24
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/meetup_controller.rb:24
+  Rendering meetup/show.html.erb within layouts/application
+  Rendered meetup/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 658ms (Views: 35.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-09 01:25:58 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."updated_at" DESC[0m
+  ↳ app/views/main/index.html.erb:17
+  Rendered main/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.8ms)
+
+
