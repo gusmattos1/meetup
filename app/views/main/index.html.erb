@@ -14,14 +14,5 @@
 <aside class="asside">
     <h2>Last events</h2>
     <% count = 0%>
-    <% @last_events.each do |event|%>
-    <div class="last_events">
-        <h3><%= event.name %></h3>
-        <a href="/show?urlname=<%= event.urlname %>&event_id=<%= event.event_id %>">
-        <img class="last_events_image" src="<%= event.photo %>" alt="">
-        </a>
-    </div>
-    <% count += 1 %>
-    <% break if count == 5 %>
-    <%end%>
+   
 </aside>
