@@ -1,3 +1,105 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+                50% 50%
+                no-repeat;
+  }
+
+.loader {
+    // display: none;
+    position: absolute;
+    transform-origin: center;
+    top: 40%;
+    left: 45%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  #result{
+    width: 70%;
+    padding: 20px
+  }
+
+  .single_result{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .single_result h3{
+    font-size: 25px;
+  }
+
+  .single_result button{
+    font-size: 20px;
+    border-radius: 7px;
+  }
+
+
+
+.asside {
+    position: absolute;
+    border: 2px solid black;
+    width: 30%;
+    right: 0;
+    max-height: 100%;
+    text-align: center;
+}
+
+
+  .event_image{
+    border: 1px solid gray;
+  }
+
+  .main_title{
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline grey;
+  }
+
+  #get_meetup{
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+  }
+
+  footer {
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  .container{
+      text-align: center;
+  }

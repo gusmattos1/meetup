@@ -1,3 +1,29 @@
 // Place all the styles related to the meetup controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.event_title{
+    text-align: center;
+}
+.time{
+    text-align: center;
+}
+
+.event{
+    height: 100%;
+    margin: 0 auto;
+}
+
+.member {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+    text-align: center;
+}
+
+.user_image{
+    width: 120px;
+    height: 120px;
+}

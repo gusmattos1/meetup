@@ -1,24 +1,31 @@
 <div class="event">
-<h2> <%= @selected_event['name'] %> </h2>
-<%= @selected_event['description'].html_safe %>
+    <div class="event_title">
+        <h2> <%= @selected_event['name'] %> </h2>
+        <% if @selected_event['featured_photo'] %>
+        <img src="<%=@selected_event['featured_photo']['photo_link']%>" alt="">
+        <%end%>
+        <h4>Group: <%= @selected_event['group']['name'] %></h4>
+        <p>When: <%= @selected_event['local_date'] %> at <%= @selected_event['local_time'] %></p>
+    </div>
+    <h4>Description:</h4>
+    <%= @selected_event['description'].html_safe %>
 
-<h2>Members:</h2>
-
-<% @event_members.each do |p| %>
-
-<div style="width: 120px; border: solid 1px black" class = 'member'></div>
-
-    <h2><%= p['member']['name']%></h2>
-
-    <% if  p['member']['photo'] %>
-    <img style="max-width: 100px; max-width: 100px" class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt="">
-    <% else %>
-    <p style="color: red; font-size: 12px">user have no pictures</p>
-    <%end%>
-
+    <a href="<%= @selected_event['link'] %>"><%= @selected_event['link'] %></a>
 </div>
 
-<% end %>
+<div class="members">
+    <h2>Members:</h2>
 
+    <% @event_members.each do |p| %>
 
+        <div class = 'member'>
+            <h2><%= p['member']['name']%></h2>
+            <% if  p['member']['photo'] %>
+            <img class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt="">
+            <% else %>
+            <img class = 'user_image' src="https://secure.meetupstatic.com/photos/member/5/d/0/e/member_264323822.jpeg" alt="">
+            <%end%>
+        </div>
+    <% end %>
 </div>
+

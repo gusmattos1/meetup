@@ -1,10 +1,12 @@
 
 var latitude
 var longitude
+var loader = document.getElementById('loading')
+var button = document.getElementById('get_meetup')
 
-
-document.getElementById('get_meetup').addEventListener('click', function(event){
+button.addEventListener('click', function(event){
     event.preventDefault()
+    loader.style.display = 'block';
     geoFindMe()
 });
 function geoFindMe() {
@@ -22,8 +24,12 @@ function geoFindMe() {
             method: 'GET',
             dataType: 'json'
         }).done(function(data) {
+
             console.log(data);
             
+            loader.style.display = "none";
+            button.style.display = 'none';
+
             display_data(data)
             
         });
@@ -33,7 +39,7 @@ function geoFindMe() {
         // alert("Unable to retrieve your location");
         alert(`ERROR(${err.code}): ${err.message}`);
         console.log('error');
-        
+        loader.style.display = "none";
       }
       navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -46,19 +52,29 @@ for (var i = 0; i < data.events.length; i++) {
   var name            = document.createElement("h3")
   var time             = document.createElement("p")
   var request_link    = document.createElement("a")
+  var image           = document.createElement('img')
   var request_button  = document.createElement("button")
-
   name.innerText        = data.events[i].name
-  time.innerText       =  data.events[i].time
+  time.innerText       =  'When: ' + data.events[i].local_date + ' at ' + data.events[i].local_time
   div.classList.add("single_result")
+  image.classList.add("event_image")
   request_link.setAttribute('target', '_blank')
   request_link.setAttribute('href', '/show?urlname=' + data.events[i].group.urlname + '&event_id=' + data.events[i].id)
   request_button.innerText = 'Select Event'
   request_link.appendChild(request_button)
   div.appendChild(name)
+  if (data.events[i].featured_photo) {
+    image.setAttribute('src', data.events[i].featured_photo.photo_link)
+    div.appendChild(image)
+  } else {
+    image.setAttribute('src', 'http://www.bsmc.net.au/wp-content/uploads/No-image-available.jpg')
+    div.appendChild(image)
+  }
   div.appendChild(time)
   div.appendChild(request_link)
   result.appendChild(div)
+
+
 }
 }
 

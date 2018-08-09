@@ -1,9 +1,14 @@
 class Meetup
     include HTTParty
-    base_uri 'api.meetup.com'
-  
+
+# set the URL for API request
+  base_uri 'api.meetup.com'
+
+  # Set the options for API request
+
     attr_reader :options
-  
+
+
     def initialize
       api_key  = '5e4d3812121c65223f56467776e5912'
       @options = {
@@ -17,7 +22,7 @@ class Meetup
     end
   
     def get_data (latitude, longitude)
-      self.class.get('/find/upcoming_events?key=5e4d3812121c65223f56467776e5912&sign=true&photo-host=public&lon=' + longitude + '&page=20&radius=smart&lat=' + latitude, @options)
+      self.class.get('/find/upcoming_events?key=5e4d3812121c65223f56467776e5912&fields=featured_photo&sign=true&photo-host=public&lon=' + longitude + '&page=20&radius=smart&lat=' + latitude, @options)
     end
   
     def events (latitude, longitude)
@@ -29,7 +34,7 @@ class Meetup
     end
 
     def get_selected_event(urlname, event_id)
-      self.class.get('/' + urlname + '/events/' + event_id + '?&sign=true')
+      self.class.get('/' + urlname + '/events/' + event_id + '?&sign=true&fields=featured_photo')
     end
     
     def get_event_rsvps(urlname, event_id)
