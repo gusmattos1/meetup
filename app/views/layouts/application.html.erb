@@ -2,18 +2,50 @@
 <html>
   <head>
     <title>Meetup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   </head>
 
   <body>
-
-
-    <%= yield %>
-
+    <header>
+        <div class="top-bar">
+            <div class="container">
+              <div class="row">
+                <div class="col-9 social">
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                  <a href="#"><span class="fa fa-instagram"></span></a>
+                  <a href="#"><span class="fa fa-youtube-play"></span></a>
+                  <a href="#"><span class="fa fa-vimeo"></span></a>
+                  <a href="#"><span class="fa fa-snapchat"></span></a>
+                </div>
+                <div class="col-3 search-top">
+                  <form action="#" class="search-top-form">
+                    <span class="icon fa fa-search"></span>
+                    <input type="text" id="s" placeholder="Type keyword to search...">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container logo-wrap" id="main_title">
+            <div class="row pt-5">
+              <div class="col-12 text-center">
+                <a class="absolute-toggle d-block d-md-none" data-toggle="collapse" href="#navbarMenu" role="button" aria-expanded="false" aria-controls="navbarMenu"><span class="burger-lines"></span></a>
+                <h1 class="site-logo"><a href="index.html"><img style="    height: 120px;
+                  padding-left: 37px;" src="https://secure.meetupstatic.com/s/img/5455565085016210254/logo/svg/logo--script.svg" alt=""> <br>FINDER</a></h1>
+              </div>
+            </div>
+          </div>
+    </header>
+    <div class="yeld">
+      <%= yield %>
+    </div>
 
     <footer>
       <p>Created by Gustavo de Mattos - 2018</p>

@@ -20,16 +20,19 @@ class MeetupController < ApplicationController
     @selected_event = Meetup.new.selected_event(urlname, event_id)
     @event_members = Meetup.new.selected_event_rsvps(urlname, event_id)
 
+    if @selected_event['featured_photo']
     new_event = Event.new(name: @selected_event['name'], photo: @selected_event['featured_photo']['photo_link'], urlname: urlname, event_id: event_id )
+    else
+    new_event = Event.new(name: @selected_event['name'], photo: 'http://www.bsmc.net.au/wp-content/uploads/No-image-available.jpg', urlname: urlname, event_id: event_id )
+    end
+
     if new_event.save
-      p 'save'
-      p new_event
+      p 'event saved'
     else 
-      p 'updated'
+      p 'event updated'
       new_event = Event.find_by(event_id: event_id)
       new_event.updated_at = Time.now
       new_event.save
-      p new_event
     end
   end
 end

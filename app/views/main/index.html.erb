@@ -1,30 +1,39 @@
 <div class="modal" id="loading">
      <div class="loader"></div>
-    </div>
-
-<div class="container">
-
-    <h1 class="main_title">Find the perfect Meet for you</h1>
-    
-
-    <div id='result'>
-    </div>
 </div>
-<button id='get_meetup'>Get a Meetup near you</button>
-<aside class="asside">
-    <h2>Last events</h2>
-<% if @last_events %>
-    <% count = 0%>
 
-    <% @last_events.each do |event|%>
-    <div class="last_events">
-        <h3><%= event.name %></h3>
-        <a href="/show?urlname=<%= event.urlname %>&event_id=<%= event.event_id %>">
-        <img class="last_events_image" src="<%= event.photo %>" alt="">
-        </a>
-    </div>
-    <% count += 1 %>
-    <% break if count == 5 %>
-    <%end%>
-    <%end%>
-</aside>
+    
+<button id='get_meetup'>Get a Meetup near you</button>
+
+<div id='result'></div>
+
+<div class="last_selecteds">
+    <section class="site-section pt-5">
+        <div class="container">
+            <h2>Last selections</h2>
+            <div class="row">
+
+                <% if @last_events %>
+                    <% count = 0%>
+                    <% @last_events.each do |event|%>
+
+                <div class="col-md-6 col-lg-4">
+                    <a href="/show?urlname=<%= event.urlname %>&event_id=<%= event.event_id %>" class="a-block d-flex align-items-center height-md" style="background-image: url('<%= event.photo %>'); ">
+                        <div class="text">
+                            <div class="post-meta">
+                                <!-- <span class="category">Lifestyle</span>
+                                <span class="mr-2">March 15, 2018 </span> &bullet;
+                                <span class="ml-2"><span class="fa fa-comments"></span> 3</span> -->
+                            </div>
+                            <h3><%= event.name %></h3>
+                        </div>
+                    </a>
+                </div>
+                        <% count += 1 %>
+                        <% break if count == 6 %>
+                    <%end%>
+                <%end%>
+            </div>
+        </div>
+    </section>
+</div>
