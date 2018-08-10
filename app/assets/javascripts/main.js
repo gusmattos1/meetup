@@ -14,7 +14,6 @@ button.addEventListener('click', function(event){
 function geoFindMe() {
     
     function success(position) {
-        console.log('start succes');
         
         var pos = {
         lat: position.coords.latitude,
@@ -26,9 +25,7 @@ function geoFindMe() {
             method: 'GET',
             dataType: 'json'
         }).done(function(data) {
-
-            console.log(data);
-            
+                        
             loader.style.display = "none";
             button.style.display = 'none';
             maintitle.style.display = 'none';
