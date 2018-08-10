@@ -4,6 +4,7 @@ var longitude
 var loader = document.getElementById('loading')
 var button = document.getElementById('get_meetup')
 var maintitle = document.getElementById('main_title')
+var div_yeld = document.getElementById('div_yeld')
 
 button.addEventListener('click', function(event){
     event.preventDefault()
@@ -31,6 +32,7 @@ function geoFindMe() {
             loader.style.display = "none";
             button.style.display = 'none';
             maintitle.style.display = 'none';
+            div_yeld.style.backgroundColor = "#f7f5f3";
             display_data(data)
             
         });
@@ -59,10 +61,12 @@ function display_data(data) {
         var image           = document.createElement('img')
         var request_button  = document.createElement("button")
 
+        div2.style.display = "grid";
         section.setAttribute('class', 'site-section py-lg')
         div.setAttribute('class', 'div_event')
         image.setAttribute('class', 'img-fluid event_image')
         span.setAttribute('class', 'mr-2')
+        name.setAttribute('class', 'h2_event_title')
 
         name.innerText       = data.events[i].name
         div2.appendChild(name)
