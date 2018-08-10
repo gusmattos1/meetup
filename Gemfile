@@ -12,6 +12,8 @@ gem 'jquery-rails'
 
 gem 'pg'
 
+gem "font-awesome-rails"
+
 #==========================
 
 
