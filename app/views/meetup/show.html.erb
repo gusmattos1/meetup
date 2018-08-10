@@ -1,31 +1,40 @@
-<div class="event">
-    <div class="event_title">
-        <h2> <%= @selected_event['name'] %> </h2>
-        <% if @selected_event['featured_photo'] %>
-        <img src="<%=@selected_event['featured_photo']['photo_link']%>" alt="">
-        <%end%>
-        <h4>Group: <%= @selected_event['group']['name'] %></h4>
-        <p>When: <%= @selected_event['local_date'] %> at <%= @selected_event['local_time'] %></p>
-    </div>
-    <h4>Description:</h4>
-    <%= @selected_event['description'].html_safe %>
 
-    <a href="<%= @selected_event['link'] %>"><%= @selected_event['link'] %></a>
-</div>
+<section class="site-section py-lg">
+    <div class="show_event">
+        <div class="show_event_div">
+        <h1 class="mb-4"><%= @selected_event['name'] %></h1>
+            <div class="post-meta group_data">
+                <span class="category">Group: <%= @selected_event['group']['name'] %></span>
+                <span class="mr-2">When: <%= @selected_event['local_date'] %> at <%= @selected_event['local_time'] %></span>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12 mb-4 element-animate fadeInUp element-animated">
+                    <% if @selected_event['featured_photo'] %>
+                    <img src="<%=@selected_event['featured_photo']['photo_link']%>" alt="Image placeholder" class="img-fluid">
+                        <% end %>
+                </div>
+            </div>
+        <div class="post-content-body">
+            <h4>Description:</h4>
+            <p><%= @selected_event['description'].html_safe %></p>
 
-<div class="members">
-    <h2>Members:</h2>
-
-    <% @event_members.each do |p| %>
-
-        <div class = 'member'>
-            <h2><%= p['member']['name']%></h2>
-            <% if  p['member']['photo'] %>
-            <img class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt="">
-            <% else %>
-            <img class = 'user_image' src="https://secure.meetupstatic.com/photos/member/5/d/0/e/member_264323822.jpeg" alt="">
-            <%end%>
+            <a href="<%= @selected_event['link']%>"><%= @selected_event['link']%></a>
         </div>
-    <% end %>
-</div>
+    </div>           
+</section>               
+    <div class="members_div">
+        <h2>Members:</h2>
+
+        <% @event_members.each do |p| %>
+    
+            <div class = 'member'>
+                <h4><%= p['member']['name']%></h4>
+                <% if  p['member']['photo'] %>
+               <a href="https://www.meetup.com/<%= p['group']['urlname']%>/members/<%= p['member']['id']%>/"><img class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt=""></a> 
+                <% else %>
+                <a href="https://www.meetup.com/<%= p['group']['urlname']%>/members/<%= p['member']['id']%>/"><img class = 'user_image' src="https://secure.meetupstatic.com/photos/member/5/d/0/e/member_264323822.jpeg" alt=""></a> 
+                <%end%>
+            </div>
+        <% end %>
+    </div>
 
