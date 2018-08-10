@@ -2,6 +2,8 @@
 var latitude
 var longitude
 var loader = document.getElementById('loading')
+// loader is a div with a animation with css
+
 var button = document.getElementById('get_meetup')
 var maintitle = document.getElementById('main_title')
 var div_yeld = document.getElementById('div_yeld')
@@ -9,6 +11,8 @@ var div_yeld = document.getElementById('div_yeld')
 button.addEventListener('click', function(event){
     event.preventDefault()
     loader.style.display = 'block';
+    // show the loader wile api call 
+
     geoFindMe()
 });
 function geoFindMe() {
@@ -19,19 +23,22 @@ function geoFindMe() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
         };
-        // ajax call to google maps to   readible address from location data
+
+        // ajax call to meetup api with the lat and long
         var response = $.ajax({
             url: '/meetup?lat='+pos.lat+'&lng='+pos.lng,
             method: 'GET',
             dataType: 'json'
         }).done(function(data) {
-                        
+
             loader.style.display = "none";
             button.style.display = 'none';
             maintitle.style.display = 'none';
             div_yeld.style.backgroundColor = "#f7f5f3";
+
             display_data(data)
             
+            // remove the button, logo and the loader from the page and call the function to display the results on the page
         });
     }
     
@@ -39,7 +46,21 @@ function geoFindMe() {
         // alert("Unable to retrieve your location");
         alert(`ERROR(${err.code}): ${err.message}`);
         console.log('error');
-        loader.style.display = "none";
+
+        var response = $.ajax({
+            url: '/meetup?lat=43.6&lng=-79.3',
+            method: 'GET',
+            dataType: 'json'
+        }).done(function(data) {
+
+            loader.style.display = "none";
+            button.style.display = 'none';
+            maintitle.style.display = 'none';
+            div_yeld.style.backgroundColor = "#f7f5f3";
+
+            display_data(data)
+        });
+            // remove the button, logo and the loader from the page and call the function to display the results on the page
       }
       navigator.geolocation.getCurrentPosition(success, error);
     }
@@ -69,7 +90,6 @@ function display_data(data) {
         div2.appendChild(name)
 
         span.innerText       = 'When: ' + data.events[i].local_date + ' at ' + data.events[i].local_time
-        // span.appendChild(time)
         div2.appendChild(span)
         
         request_link.setAttribute('target', '_blank')
