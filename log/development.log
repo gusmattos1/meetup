@@ -8206,3 +8206,12 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-10 14:24:55 -0400
+Processing by MainController#index as HTML
+  Rendering main/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."updated_at" DESC[0m
+  ↳ app/views/main/index.html.erb:25
+  Rendered main/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 190ms (Views: 166.1ms | ActiveRecord: 1.4ms)
+
+
