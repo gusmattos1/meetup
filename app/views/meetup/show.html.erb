@@ -7,14 +7,16 @@
                 <span class="category">Group: <%= @selected_event['group']['name'] %></span>
                 <span class="mr-2">When: <%= @selected_event['local_date'] %> at <%= @selected_event['local_time'] %></span>
             </div>
-            <div class="row mb-5">
-                <div class="col-md-12 mb-4 element-animate fadeInUp element-animated">
+            <div class="row">
+                <div class="col-md-12 fadeInUp element-animated">
                     <% if @selected_event['featured_photo'] %>
                     <img src="<%=@selected_event['featured_photo']['photo_link']%>" alt="Image placeholder" class="img-fluid">
-                        <% end %>
+                    <% else%>
+                    <p> Sorry, no image availabe </p>
+                    <% end %>
                 </div>
             </div>
-        <div class="post-content-body">
+        <div class="post-content-body mt-5">
             <h4>Description:</h4>
             <p><%= @selected_event['description'].html_safe %></p>
 
@@ -30,9 +32,9 @@
             <div class = 'member'>
                 <h4><%= p['member']['name']%></h4>
                 <% if  p['member']['photo'] %>
-               <a href="https://www.meetup.com/<%= p['group']['urlname']%>/members/<%= p['member']['id']%>/"><img class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt=""></a> 
+               <a  href="https://www.meetup.com/<%= p['group']['urlname']%>/members/<%= p['member']['id']%>/"><img id='member_photo' class = 'user_image' src="<%= p['member']['photo']['photo_link'] %>" alt=""></a> 
                 <% else %>
-                <a href="https://www.meetup.com/<%= p['group']['urlname']%>/members/<%= p['member']['id']%>/"><img class = 'user_image' src="https://secure.meetupstatic.com/photos/member/5/d/0/e/member_264323822.jpeg" alt=""></a> 
+                <a href="https://www.meetup.com/<%= p['group']['urlname']%>/members/<%= p['member']['id']%>/"><img id='member_photo' class = 'user_image' src="https://secure.meetupstatic.com/photos/member/5/d/0/e/member_264323822.jpeg" alt=""></a> 
                 <%end%>
             </div>
         <% end %>
